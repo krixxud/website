@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funweb 고객센터</title>
+    <link rel="stylesheet" href="./style/sub.css">
+</head>
+<body>
+    <header id="header">
+        <h1><a href="./">Funweb</a></h1>
+        
+
+        
+        <nav id="membership">
+            <h2 class="hidden">멤버쉽네비게이션</h2>
+            <ul>
+                <li class="goLogin"><a href="#">login</a></li>
+                <li class="goJoin"><a href="#">join</a></li>
+            </ul>
+        </nav>
+
+        <nav id="gnb">
+            <h2 class="hidden">펀웹 주요이용메뉴</h2>
+            <ul>
+                <li><a href="./">home</a></li>
+                <li><a href="./company_welcome.html">company</a></li>
+                <li><a href="#">solution</a></li>
+                <li><a href="./customerCenter_notice.html">customer center</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+     </header>
+     <hr>
+
+    <!-- 서브 시작 -->
+    <main>
+        <section id="container">
+            <header id="subHeader" class="subHeaderCustomerCenter">
+                <h2>Customer Center</h2>
+            </header>
+
+            <nav id="snb">
+                <h3 class="hidden">서브페이지 네비게이션</h3>
+                <ul>
+                    <li class="on"><a href="#">notice</a></li>
+                    <li><a href="#">public news</a></li>
+                    <li><a href="#">driver download</a></li>
+                    <li><a href="#">service policy</a></li>
+                </ul>
+            </nav>
+
+            <article id="subcontent" class="subContentNotice">
+                <h3>notice</h3>
+ 
+                <table id="notice">
+                    <caption class="hidden">공지사항</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="No">No.</th>
+                            <th scope="col" class="Title">Title</th>
+                            <th scope="col" class="Writer">Writer</th>
+                            <th scope="col" class="Date">Date</th>
+                            <th scope="col" class="Read">Read</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td><div>아이언맨 버리고 닥터 둠 된 썰 푼다 ㅋㅋ 망해가던 마블이 지들도 롯된 걸 아는지 나한테 연락와서 제발 한번만 다시 출연해달라고 그러던데 내가 거기다가 바로 알겠다고 하기 좀 자존심 상하는 거야 ㅋㅋㅋㅋㅋ 그래서</div></td>
+                            <td>Robert.D.J</td>
+                            <td>2024.05.13</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>캡틴 아메리카 못해먹겠다. 차라리 조니 스톰을 하지</td>
+                            <td>Chris evans</td>
+                            <td>2024.02.16</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>소울스톤 된 블랙 위도우 구할 팟 모집 (1/20)</td>
+                            <td>Jeremy Renner</td>
+                            <td>2020.07.01</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>내 망치 어딨는지 아시는 분?</td>
+                            <td>Chris Hemsworth</td>
+                            <td>2019.10.07</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>난 그루트다.</td>
+                            <td>Groot</td>
+                            <td>2019.05.19</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ㄷㅂㄷㅂㄷㅂㄷㅂㄷㅂㄷㅂㄷㅂㄷㅂㄷㅂ</td>
+                            <td>Rocket Raccoon</td>
+                            <td>2019.05.15</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>dlidjkfldsaakdflg</td>
+                            <td>Hulk</td>
+                            <td>2018.04.13</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>- 비정상적인 이용으로 인해 게시글이 삭제되었습니다. -</td>
+                            <td>Rocket Raccoon</td>
+                            <td>2018.01.01</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>아스가르드 왕이 누구인가에 대한 고찰</td>
+                            <td>Tom Hiddleston</td>
+                            <td>2017.12.25</td>
+                            <td>9999+</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>와 이거 뭐임</td>
+                            <td>Natalie Portman</td>
+                            <td>2010.03.11</td>
+                            <td>9999+</td>
+                        </tr>
+                    </tbody>
+                </table>
+              
+                <form id="noticeSearch">
+                    <fieldset>
+                        <legend class="hidden">공지사항검색</legend>
+                        <input type="text" id="searchBox" aria-label="검색어입력" placeholder=" 검색어를 입력하세요.">
+                        <input type="button" id="searchBtn" aria-label="검색버튼" value="Search">
+                    </fieldset>
+                </form>
+
+                <div id="pageControl">
+                    <a href="#">Prev</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">Next</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- 서브 끝 -->
+
+    <hr>
+    <footer id="footer">
+        <div class="info">
+            <small>All contents &copy; Copyright 2011 FunWeb Inc. all rights reserved</small>
+            <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321</address>
+        </div>
+
+        <ul class="sns">
+            <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+            <li class="twitter"><a href="#">트위터 바로가기</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+@import url(./style.css);
+
+/* 컨테이너 시작 */
+#container { 
+    margin-top: 100px;
+}
+#subHeader { 
+    height: 400px;
+    background: no-repeat center / cover;
+}
+/* 페이지마다 각각의 배경 적용 */
+#subHeader.subHeaderCompany { 
+    background-image: url(../images/subHeader.jpg);
+}
+#subHeader.subHeaderCustomerCenter { 
+    background-image: url(../images/sunset.jpg);
+}
+
+#subHeader h2 { 
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #000;
+    transition: 0.4s;
+}
+#subHeader h2:hover { 
+    font-size: 60px;
+}
+
+/* 서브 네비 */
+#snb { 
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+#snb ul { 
+    display: flex;
+    height: 54px;
+    width: 1200px;
+    border-right: 1px solid #ccc;
+}
+#snb ul li { 
+    width: 25%;
+    text-align: center;
+    line-height: 54px;
+    border-left: 1px solid #ccc;
+    background: url(../images/bulletSnb.png) no-repeat right 10px center;
+}
+#snb ul .on { 
+    border-bottom: 3px solid #000;
+}
+#snb ul li a { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 14px;
+}
+#snb ul li a:hover { 
+    border-bottom: 3px solid #000;
+}
+
+/* 서브 컨텐츠 공통*/
+#subcontent { 
+    width: 1200px;
+    margin: 0 auto;
+}
+#subcontent h3 { 
+    margin: 55px 0 57px 0;
+    /* font-size: 40px;
+    font-weight: normal;
+    font-family: "Times New Roman"; */
+    font: 40px "Times New Roman" ;
+    text-transform: capitalize;
+}
+/* 개별페이지 */
+
+/* company */
+#subcontent.subContentWelcome figure { 
+    float: right;
+    margin-left: 20px;
+    text-align: center;
+}
+#subcontent.subContentWelcome p { 
+    margin-bottom: 27px; 
+    text-align: justify;
+}
+
+/* notice */
+#subContent.subContentNotice { }
+#notice { 
+    width: 1200px;
+ }
+#notice thead {  }
+#notice thead th { 
+    color: #fff;
+    height: 30px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    background: linear-gradient(180deg, #66aeeb, #3d93ef 50%, #328ea3 50%, #2872e0 )
+ }
+#notice thead th.No { 
+    width: 70px;
+    border-radius: 5px 0 0 5px; }
+#notice thead th.Title { width: 800px; }
+#notice thead th.Writer { width: 120px; }
+#notice thead th.Date { width: 120px; }
+#notice thead th.Read { border-radius: 0 5px 5px 0;}
+#notice tbody { }
+#notice tbody td { 
+    padding: 10px 0 ;
+    border-bottom: 1px solid #ccc;
+ }
+#notice tbody td:not(:nth-child(2)) { 
+    text-align: center;
+}
+#notice tbody td > div { 
+    width: 800px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* noticeSearch */
+#noticeSearch { 
+    display: flex; 
+    justify-content: end;
+    margin-top: 15px;
+}
+#searchBox {
+    width: 222px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding-left: 15px;
+ }
+#searchBtn {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #66aeeb, #3d93ef 50%, #328ea3 50%, #2872e0 );
+    color: white;
+ }
+
+/* pageControl */
+#pageControl { 
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+#pageControl a { 
+    padding: 0 15px;
+}
+
+
